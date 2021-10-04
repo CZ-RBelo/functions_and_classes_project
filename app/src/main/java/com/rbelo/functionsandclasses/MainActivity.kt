@@ -18,12 +18,17 @@ class MainActivity : AppCompatActivity() {
 /*    fun helloWorld(view: View)
     {
     textViewString
+
     }*/
 
    fun makeSimpsons(view: View) {
 
-       val simpson = Simpson(nameText.text.toString(), Integer.parseInt(ageText.text.toString()), textJob.text.toString())
+        val simpson = Simpson(nameText.text.toString(), Integer.parseInt(ageText.text.toString()), textJob.text.toString())
+
        textViewString.text = "Name: " + simpson.name + "Age: " + simpson.age + "Job: " + simpson.job
+
+
+
     }
 
 }
